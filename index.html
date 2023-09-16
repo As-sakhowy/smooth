@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>personal info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1>Please enter your details here !</h1>
+    <form action="action_page.php" method="post">
+        <fieldset>
+        <label> First Name :<br>
+        <input type="text" name="First-Name"></label><br>
+        <label>Last Name : <br>
+        <input type="text" name="Last-Name"></label><br>
+         <label>Email : <br>
+        <input type="email" value="email"></label> <br>
+         <label>Gender : <br>
+            Male<input type="radio" name="Gender" value="male" checked><br>
+            Female<input type="radio" name="Gender" value="female"><br>
+            Others<input type="radio" name="Gender" value="others"><br></label>
+        <label> Age : <br>(Optional)
+        <input type="date" name="bday" max="15" min="2"> <br></label>
+         <label>Religion : <br>
+            Muslim<input type="checkbox" name="religion1" value="muslim" checked> <br>
+            Christian<input type="checkbox" name="religion2" value="christian"> <br>
+            Others<input type="checkbox" name="religion3" value="others"> <br></label>
+       <label> Which color did you prefer : <br>
+        <input type="color" value="color"> <br>
+        Add your home page : <br>
+        <input type="url" name="homepage "> <br>
+        How did you here about us ? <br>
+        <select>
+            <option>none</option>
+            <option> from a friend</option>
+            <option>from onlin ad</option>
+            <option>from social media</option>
+        </select> <br></label>
+        <label>What do you like about us ? <br>
+        <textarea>I Like ...</textarea><br>
+        Username : <br>
+        <input type="name" value="username"> <br>
+        Password : <br>
+        <input type="password" name="password" required pattern="[A-Za-z]{3}"> <br>
+        Confirm Password : <br>
+        <input type="password" name="password" required pattern="A-Z0-9"> <br>
+         <input type="submit" value="submit"></label>
+        </feldset>
+    </form>
+    </div>
+</body>
+</html>
